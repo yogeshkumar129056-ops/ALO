@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Pink Paradise Collection</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>alo – Paradise Pink Rewards</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -17,122 +17,108 @@ box-sizing:border-box;
 
 body{
 font-family:'Inter',sans-serif;
-background:#f4f1f2;
+background:#ece7ea;
 color:#111;
 }
-
-/* MAIN CONTAINER */
 
 .main-card{
-max-width:420px;
+max-width:390px;
 margin:0 auto;
-background:#f7f4f5;
 min-height:100vh;
+background:#f5f1f3;
 overflow:hidden;
-}
-
-/* TOP SHIPPING BAR */
-
-.shipping-bar{
-background:#ea7bb0;
-color:#111;
-text-align:center;
-padding:12px;
-font-size:12px;
-font-weight:700;
-letter-spacing:.8px;
 }
 
 /* HEADER */
 
-.header{
+.top-strip{
+background:#ea7bb0;
+padding:10px;
+text-align:center;
+font-size:11px;
+font-weight:800;
+letter-spacing:.8px;
+color:#111;
+}
+
+.topbar{
 background:#fff;
-padding:18px 16px;
+padding:14px 16px;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:flex-start;
 border-bottom:1px solid #ececec;
 }
 
-.logo{
-font-size:34px;
+.brand{
+font-size:28px;
 font-weight:800;
-letter-spacing:-2px;
-}
-
-.menu{
-display:flex;
-gap:16px;
-font-size:13px;
-font-weight:700;
-}
-
-.menu span{
-cursor:pointer;
+letter-spacing:-1px;
+color:#111;
 }
 
 /* HERO */
 
-.hero{
-padding:22px 18px 8px;
+.hero-image{
+padding:14px 18px 0;
 }
 
-.hero-title{
-font-size:46px;
-font-weight:800;
-line-height:0.95;
-letter-spacing:-3px;
-margin-bottom:10px;
-}
-
-.hero-sub{
-font-size:14px;
-font-weight:600;
-letter-spacing:1px;
-color:#666;
-margin-bottom:18px;
-}
-
-/* IMAGE GRID */
-
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
-margin-bottom:18px;
-}
-
-.grid img{
+.hero-image img{
 width:100%;
-height:240px;
+height:250px;
 object-fit:cover;
-border-radius:20px;
+border-radius:24px;
 display:block;
 }
 
-/* FEATURE BOX */
-
-.feature-box{
-background:#fff;
-margin:0 18px 14px;
-border-radius:22px;
-padding:18px;
-box-shadow:0 4px 12px rgba(0,0,0,.04);
-}
-
-.feature-box h3{
-font-size:18px;
-margin-bottom:8px;
+.hero-title{
+font-size:40px;
+line-height:1;
 font-weight:800;
+letter-spacing:-2.5px;
+text-align:center;
+padding:26px 18px 22px;
 }
 
-.feature-box p{
+/* STEP CARDS */
+
+.step-card{
+background:#fff;
+margin:0 18px 12px;
+border-radius:18px;
+padding:18px 16px;
+display:flex;
+gap:14px;
+box-shadow:0 4px 12px rgba(0,0,0,.05);
+}
+
+.step-num{
+width:38px;
+height:38px;
+border-radius:50%;
+background:#f9d6e5;
+color:#d92d7a;
+display:flex;
+align-items:center;
+justify-content:center;
 font-size:14px;
-line-height:1.5;
-color:#666;
+font-weight:800;
+flex-shrink:0;
 }
 
-/* CTA */
+.step-content h3{
+font-size:15px;
+font-weight:800;
+margin-bottom:4px;
+}
+
+.step-content p{
+font-size:14px;
+color:#666;
+line-height:1.45;
+}
+
+/* CTA SECTION */
 
 .wrap{
 padding:0 18px 28px;
@@ -140,52 +126,47 @@ padding:0 18px 28px;
 
 .cta-btn{
 width:100%;
-border:none;
 background:#ea4f98;
 color:#fff;
-padding:18px;
+border:none;
 border-radius:999px;
+padding:18px;
 font-size:15px;
 font-weight:800;
+margin:12px 0 18px;
 cursor:pointer;
-transition:.2s;
-margin-top:10px;
-box-shadow:0 8px 24px rgba(234,79,152,.28);
+box-shadow:0 10px 24px rgba(234,79,152,.25);
 }
 
-.cta-btn:hover{
-transform:translateY(-2px);
-}
-
-/* TRUST */
+/* TRUST ROW */
 
 .trust-row{
 display:flex;
 justify-content:center;
-gap:22px;
-margin:22px 0;
+gap:24px;
+margin-bottom:20px;
 }
 
 .trust-item{
 text-align:center;
 font-size:11px;
 color:#666;
-font-weight:600;
+font-weight:700;
 }
 
 .trust-icon{
-width:38px;
-height:38px;
-border-radius:50%;
+width:34px;
+height:34px;
 background:#fff;
+border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
 margin:0 auto 6px;
-box-shadow:0 2px 6px rgba(0,0,0,.06);
+box-shadow:0 2px 8px rgba(0,0,0,.06);
 }
 
-/* STATS */
+/* CLAIM BOX */
 
 .claim-box{
 background:#fff;
@@ -193,9 +174,11 @@ border-radius:18px;
 padding:16px;
 text-align:center;
 font-size:14px;
-margin-bottom:18px;
-box-shadow:0 2px 6px rgba(0,0,0,.04);
+margin-bottom:20px;
+box-shadow:0 3px 10px rgba(0,0,0,.04);
 }
+
+/* PROGRESS */
 
 .progress-wrap{
 display:flex;
@@ -208,24 +191,14 @@ margin-bottom:8px;
 .progress{
 height:7px;
 background:#d9d9d9;
-border-radius:999px;
+border-radius:20px;
 overflow:hidden;
 }
 
 .progress-fill{
-width:72%;
+width:87%;
 height:100%;
 background:#ea4f98;
-}
-
-/* FOOTER */
-
-.footer{
-padding:26px 20px 40px;
-font-size:12px;
-line-height:1.6;
-color:#777;
-text-align:center;
 }
 
 </style>
@@ -235,60 +208,58 @@ text-align:center;
 
 <div class="main-card">
 
-<div class="shipping-bar">
-COMPLIMENTARY SHIPPING OVER $75
+<div class="top-strip">
+SPRING PARADISE PINK EVENT
 </div>
 
-<div class="header">
-<div class="logo">alo</div>
-
-<div class="menu">
-<span>WOMEN</span>
-<span>MEN</span>
-<span>BAGS</span>
-</div>
+<div class="topbar">
+<div class="brand">alo</div>
 </div>
 
-<div class="hero">
+<div class="hero-image">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop">
+</div>
 
 <div class="hero-title">
-Paradise<br>Pink
+Claim Your $500<br>alo Gift Card
 </div>
 
-<div class="hero-sub">
-NEW DROP COLLECTION
+<div class="step-card">
+<div class="step-num">1</div>
+<div class="step-content">
+<h3>Tap the Button Below</h3>
+<p>Click “Get My Gift Card” to go to the official offer page.</p>
+</div>
 </div>
 
-<div class="grid">
-
-<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200&auto=format&fit=crop" />
-
-<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop" />
-
+<div class="step-card">
+<div class="step-num">2</div>
+<div class="step-content">
+<h3>Enter Your Details</h3>
+<p>Provide your name and email address to register for the offer.</p>
+</div>
 </div>
 
+<div class="step-card">
+<div class="step-num">3</div>
+<div class="step-content">
+<h3>Complete 4-5 Deals</h3>
+<p>Answer a short survey and complete the required deal offers to qualify.</p>
+</div>
 </div>
 
-<div class="feature-box">
-<h3>Designed For Movement</h3>
-
-<p>
-Soft performance fabrics, elevated silhouettes, and statement pink tones inspired by the season’s newest luxury athleisure trends.
-</p>
+<div class="step-card">
+<div class="step-num">4</div>
+<div class="step-content">
+<h3>Receive Your Gift Card</h3>
+<p>Once verified, your $500 alo e-gift card will be sent by email.</p>
 </div>
-
-<div class="feature-box">
-<h3>Limited Spring Release</h3>
-
-<p>
-Explore premium activewear essentials with lightweight comfort, modern fits, and everyday versatility.
-</p>
 </div>
 
 <div class="wrap">
 
-<button class="cta-btn">
-SHOP THE COLLECTION →
+<button class="cta-btn" onclick="redirect()">
+GET MY GIFT CARD →
 </button>
 
 <div class="trust-row">
@@ -300,23 +271,23 @@ SECURE
 
 <div class="trust-item">
 <div class="trust-icon">✓</div>
-PREMIUM
+VERIFIED
 </div>
 
 <div class="trust-item">
 <div class="trust-icon">⚡</div>
-TRENDING
+FAST
 </div>
 
 </div>
 
 <div class="claim-box">
-<strong>4,892 shoppers</strong> explored this collection today
+<strong>5,678 people</strong> have claimed their gift card this month
 </div>
 
 <div class="progress-wrap">
-<span>● COLLECTION INTEREST</span>
-<span>72% Trending</span>
+<span>● AVAILABILITY</span>
+<span>87% Claimed</span>
 </div>
 
 <div class="progress">
@@ -324,13 +295,13 @@ TRENDING
 </div>
 
 </div>
-
-<div class="footer">
-© 2026 Pink Paradise Collection.  
-Designed with a modern luxury athleisure aesthetic.
 </div>
 
-</div>
+<script>
+function redirect(){
+window.location.href="https://giftclick.org/aff_c?offer_id=314&aff_id=178257";
+}
+</script>
 
 </body>
 </html>
