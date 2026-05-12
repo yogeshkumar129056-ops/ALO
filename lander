@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Fashion Gift Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#ece9e9;
+color:#111;
+overflow-x:hidden;
+}
+
+.top-strip{
+background:#eb79b2;
+text-align:center;
+padding:14px;
+font-size:14px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.navbar{
+background:#fff;
+height:78px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 42px;
+border-bottom:1px solid #ddd;
+}
+
+.nav-left{
+display:flex;
+align-items:center;
+gap:42px;
+}
+
+.brand{
+font-size:52px;
+font-weight:800;
+letter-spacing:-4px;
+line-height:1;
+}
+
+.nav-links{
+display:flex;
+gap:36px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#111;
+font-size:18px;
+font-weight:500;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:26px;
+font-size:18px;
+}
+
+.reward-link{
+font-weight:600;
+text-decoration:underline;
+text-underline-offset:6px;
+}
+
+.hero{
+display:grid;
+grid-template-columns:27% 47% 26%;
+background:#ece9e9;
+}
+
+.left-image img,
+.center-image img,
+.right-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.left-image{
+height:730px;
+}
+
+.center-content{
+padding:58px 36px 0;
+}
+
+.hero-title{
+font-family:'Cormorant Garamond',serif;
+font-size:76px;
+font-weight:500;
+line-height:0.9;
+margin-bottom:8px;
+}
+
+.hero-sub{
+font-size:20px;
+letter-spacing:1px;
+margin-bottom:28px;
+}
+
+.center-image{
+height:480px;
+border:12px solid #e4dfdf;
+margin-bottom:28px;
+}
+
+.claim-card{
+background:#fff;
+padding:26px;
+border-radius:20px;
+box-shadow:0 4px 18px rgba(0,0,0,.06);
+}
+
+.claim-card h2{
+font-size:34px;
+line-height:1.05;
+margin-bottom:14px;
+font-weight:800;
+}
+
+.claim-card p{
+font-size:15px;
+line-height:1.6;
+color:#666;
+margin-bottom:20px;
+}
+
+.cta-btn{
+width:100%;
+background:#000;
+color:#fff;
+border:none;
+height:60px;
+border-radius:999px;
+font-size:16px;
+font-weight:700;
+letter-spacing:1px;
+cursor:pointer;
+}
+
+.right-column{
+padding:76px 42px 0 0;
+}
+
+.right-image{
+height:520px;
+margin-bottom:26px;
+}
+
+.info-box{
+background:#fff;
+padding:18px;
+border-radius:18px;
+font-size:14px;
+line-height:1.6;
+box-shadow:0 4px 18px rgba(0,0,0,.05);
+}
+
+.info-box strong{
+display:block;
+margin-bottom:8px;
+font-size:16px;
+}
+
+@media(max-width:1200px){
+.hero{
+grid-template-columns:1fr;
+}
+
+.left-image{
+display:none;
+}
+
+.right-column{
+padding:24px;
+}
+
+.center-content{
+padding:40px 20px;
+}
+
+.nav-links,
+.reward-link{
+display:none;
+}
+
+.navbar{
+padding:0 20px;
+}
+}
+
+@media(max-width:700px){
+.hero-title{
+font-size:52px;
+}
+
+.brand{
+font-size:40px;
+}
+
+.center-image{
+height:340px;
+}
+
+.right-image{
+height:360px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-strip">
+COMPLIMENTARY SHIPPING OVER $75
+</div>
+
+<div class="navbar">
+<div class="nav-left">
+<div class="brand">av</div>
+
+<div class="nav-links">
+<a href="#">WOMEN</a>
+<a href="#">MEN</a>
+<a href="#">SHOES</a>
+<a href="#">BAGS</a>
+</div>
+</div>
+
+<div class="nav-right">
+<div>⌕</div>
+<div class="reward-link">SIGN IN TO GET REWARDS</div>
+<div>♡</div>
+<div>👜</div>
+</div>
+</div>
+
+<section class="hero">
+
+<div class="left-image">
+<img src="https://images.unsplash.com/photo-1506629905607-d9c297d5f1d4?q=80&w=1200&auto=format&fit=crop" alt="fashion">
+</div>
+
+<div class="center-content">
+<h1 class="hero-title">Paradise Pink</h1>
+<div class="hero-sub">NEW DROP</div>
+
+<div class="center-image">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1400&auto=format&fit=crop" alt="fashion">
+</div>
+
+<div class="claim-card">
+<h2>Claim Your $500 Gift Card</h2>
+<p>Complete a short registration and finish the required promotional steps to qualify for the exclusive reward offer.</p>
+
+<button class="cta-btn" onclick="redirect()">GET MY GIFT CARD →</button>
+</div>
+</div>
+
+<div class="right-column">
+<div class="right-image">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1000&auto=format&fit=crop" alt="fashion">
+</div>
+
+<div class="info-box">
+<strong>Limited Availability</strong>
+5,678 people have already claimed their reward this month. Offer availability may end soon.
+</div>
+</div>
+
+</section>
+
+<script>
+function redirect(){
+window.location.href="https://giftclick.org/aff_c?offer_id=314&aff_id=178257";
+}
+</script>
+
+</body>
+</html>
+
