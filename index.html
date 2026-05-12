@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Fashion Gift Card</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
 
 <style>
@@ -17,274 +18,279 @@ body{
 font-family:'Inter',sans-serif;
 background:#ece9e9;
 color:#111;
-overflow-x:hidden;
 }
 
+.main-card{
+max-width:390px;
+margin:0 auto;
+min-height:100vh;
+background:#ece9e9;
+}
+
+/* TOP PINK BAR */
 .top-strip{
 background:#eb79b2;
 text-align:center;
-padding:14px;
-font-size:14px;
+padding:10px;
+font-size:11px;
 font-weight:700;
 letter-spacing:1px;
 }
 
-.navbar{
+/* HEADER */
+.topbar{
 background:#fff;
-height:78px;
+padding:16px 18px;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:0 42px;
 border-bottom:1px solid #ddd;
 }
 
-.nav-left{
-display:flex;
-align-items:center;
-gap:42px;
-}
-
 .brand{
-font-size:52px;
+font-size:42px;
 font-weight:800;
 letter-spacing:-4px;
 line-height:1;
 }
 
-.nav-links{
+.header-icons{
 display:flex;
-gap:36px;
+gap:16px;
+font-size:18px;
 }
 
-.nav-links a{
-text-decoration:none;
-color:#111;
-font-size:18px;
+/* HERO */
+.hero-wrap{
+padding:18px;
+}
+
+.hero-title{
+font-family:'Cormorant Garamond',serif;
+font-size:52px;
+line-height:.9;
 font-weight:500;
+margin-bottom:6px;
 }
 
-.nav-right{
-display:flex;
-align-items:center;
-gap:26px;
-font-size:18px;
+.hero-sub{
+font-size:16px;
+letter-spacing:1px;
+margin-bottom:18px;
 }
 
-.reward-link{
-font-weight:600;
-text-decoration:underline;
-text-underline-offset:6px;
+/* IMAGES */
+.hero-img{
+width:100%;
+height:300px;
+border-radius:20px;
+overflow:hidden;
+margin-bottom:14px;
 }
 
-.hero{
-display:grid;
-grid-template-columns:27% 47% 26%;
-background:#ece9e9;
-}
-
-.left-image img,
-.center-image img,
-.right-image img{
+.hero-img img{
 width:100%;
 height:100%;
 object-fit:cover;
 display:block;
 }
 
-.left-image{
-height:730px;
-}
-
-.center-content{
-padding:58px 36px 0;
-}
-
-.hero-title{
-font-family:'Cormorant Garamond',serif;
-font-size:76px;
-font-weight:500;
-line-height:0.9;
-margin-bottom:8px;
-}
-
-.hero-sub{
-font-size:20px;
-letter-spacing:1px;
-margin-bottom:28px;
-}
-
-.center-image{
-height:480px;
-border:12px solid #e4dfdf;
-margin-bottom:28px;
-}
-
+/* CLAIM CARD */
 .claim-card{
 background:#fff;
-padding:26px;
-border-radius:20px;
-box-shadow:0 4px 18px rgba(0,0,0,.06);
+border-radius:22px;
+padding:22px 18px;
+margin-bottom:16px;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
 }
 
 .claim-card h2{
 font-size:34px;
-line-height:1.05;
-margin-bottom:14px;
+line-height:1;
 font-weight:800;
+letter-spacing:-1px;
+margin-bottom:12px;
 }
 
 .claim-card p{
-font-size:15px;
-line-height:1.6;
+font-size:14px;
+line-height:1.5;
 color:#666;
-margin-bottom:20px;
+margin-bottom:18px;
 }
 
 .cta-btn{
 width:100%;
-background:#000;
+background:#111;
 color:#fff;
 border:none;
-height:60px;
 border-radius:999px;
-font-size:16px;
+padding:18px;
+font-size:15px;
 font-weight:700;
-letter-spacing:1px;
 cursor:pointer;
 }
 
-.right-column{
-padding:76px 42px 0 0;
-}
-
-.right-image{
-height:520px;
-margin-bottom:26px;
-}
-
-.info-box{
+/* MINI INFO */
+.info-card{
 background:#fff;
-padding:18px;
 border-radius:18px;
+padding:16px;
+margin-bottom:14px;
 font-size:14px;
-line-height:1.6;
-box-shadow:0 4px 18px rgba(0,0,0,.05);
+line-height:1.5;
+box-shadow:0 2px 10px rgba(0,0,0,.04);
 }
 
-.info-box strong{
+.info-card strong{
 display:block;
+font-size:15px;
+margin-bottom:6px;
+}
+
+/* TRUST */
+.trust-row{
+display:flex;
+justify-content:center;
+gap:24px;
+margin:18px 0;
+}
+
+.trust-item{
+text-align:center;
+font-size:11px;
+color:#666;
+}
+
+.trust-icon{
+width:34px;
+height:34px;
+border:1px solid #ccc;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 6px;
+}
+
+/* PROGRESS */
+.claim-box{
+background:#fff;
+border-radius:16px;
+padding:16px;
+text-align:center;
+font-size:14px;
+margin-bottom:20px;
+}
+
+.progress-wrap{
+display:flex;
+justify-content:space-between;
+font-size:12px;
+font-weight:600;
 margin-bottom:8px;
-font-size:16px;
 }
 
-@media(max-width:1200px){
-.hero{
-grid-template-columns:1fr;
+.progress{
+height:6px;
+background:#d4d4d4;
+border-radius:20px;
+overflow:hidden;
 }
 
-.left-image{
-display:none;
-}
-
-.right-column{
-padding:24px;
-}
-
-.center-content{
-padding:40px 20px;
-}
-
-.nav-links,
-.reward-link{
-display:none;
-}
-
-.navbar{
-padding:0 20px;
-}
-}
-
-@media(max-width:700px){
-.hero-title{
-font-size:52px;
-}
-
-.brand{
-font-size:40px;
-}
-
-.center-image{
-height:340px;
-}
-
-.right-image{
-height:360px;
-}
+.progress-fill{
+width:87%;
+height:100%;
+background:#111;
 }
 </style>
 </head>
 
 <body>
 
+<div class="main-card">
+
 <div class="top-strip">
 COMPLIMENTARY SHIPPING OVER $75
 </div>
 
-<div class="navbar">
-<div class="nav-left">
+<div class="topbar">
 <div class="brand">av</div>
 
-<div class="nav-links">
-<a href="#">WOMEN</a>
-<a href="#">MEN</a>
-<a href="#">SHOES</a>
-<a href="#">BAGS</a>
+<div class="header-icons">
+<span>⌕</span>
+<span>♡</span>
+<span>👜</span>
 </div>
 </div>
 
-<div class="nav-right">
-<div>⌕</div>
-<div class="reward-link">SIGN IN TO GET REWARDS</div>
-<div>♡</div>
-<div>👜</div>
-</div>
+<div class="hero-wrap">
+
+<div class="hero-title">
+Paradise Pink
 </div>
 
-<section class="hero">
-
-<div class="left-image">
-<img src="https://images.unsplash.com/photo-1506629905607-d9c297d5f1d4?q=80&w=1200&auto=format&fit=crop" alt="fashion">
+<div class="hero-sub">
+NEW DROP
 </div>
 
-<div class="center-content">
-<h1 class="hero-title">Paradise Pink</h1>
-<div class="hero-sub">NEW DROP</div>
-
-<div class="center-image">
-<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1400&auto=format&fit=crop" alt="fashion">
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200&auto=format&fit=crop">
 </div>
 
 <div class="claim-card">
 <h2>Claim Your $500 Gift Card</h2>
-<p>Complete a short registration and finish the required promotional steps to qualify for the exclusive reward offer.</p>
 
-<button class="cta-btn" onclick="redirect()">GET MY GIFT CARD →</button>
-</div>
+<p>
+Complete a short registration and finish the required promotional deals to qualify for the exclusive reward offer.
+</p>
+
+<button class="cta-btn" onclick="redirect()">
+GET MY GIFT CARD →
+</button>
 </div>
 
-<div class="right-column">
-<div class="right-image">
-<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1000&auto=format&fit=crop" alt="fashion">
-</div>
-
-<div class="info-box">
+<div class="info-card">
 <strong>Limited Availability</strong>
-5,678 people have already claimed their reward this month. Offer availability may end soon.
+5,678 people have already claimed their reward this month.
+</div>
+
+<div class="hero-img" style="height:240px;">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1000&auto=format&fit=crop">
+</div>
+
+<div class="trust-row">
+<div class="trust-item">
+<div class="trust-icon">🔒</div>
+SECURE
+</div>
+
+<div class="trust-item">
+<div class="trust-icon">✓</div>
+VERIFIED
+</div>
+
+<div class="trust-item">
+<div class="trust-icon">⚡</div>
+FAST
 </div>
 </div>
 
-</section>
+<div class="claim-box">
+<strong>87% of rewards claimed</strong> this month
+</div>
+
+<div class="progress-wrap">
+<span>● AVAILABILITY</span>
+<span>87% Claimed</span>
+</div>
+
+<div class="progress">
+<div class="progress-fill"></div>
+</div>
+
+</div>
+</div>
 
 <script>
 function redirect(){
